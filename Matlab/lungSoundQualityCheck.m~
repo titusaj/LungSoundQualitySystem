@@ -21,11 +21,11 @@ function [SNR, qualityValue] = lungSoundQualityCheck(audioBuffer, Fs)
     
 %This ensures the buffer is of the proper length to push into the recording
 %pipline This will usally be raw audio
-[bufferLenghtCheck] = checkBufferLength(audioBuffer,Fs)
+[] = checkBufferLength(audioBuffer,Fs)
 
 % Now that the buffer has been passed in terms of length requriements need
 % to caclulate the SNR of the signal
-[SNR] = snrCalculation(auidoBuffer, Fs, bufferLenghtCheck)
+[SNR] = snrCalculation(auidoBuffer, Fs)
 
 
 
