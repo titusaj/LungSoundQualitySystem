@@ -12,3 +12,8 @@
 
 
 %% SNR Calculation
+
+function [SNR] = snrCalculation(auidoBuffer, Fs, bufferLenghtCheck)
+
+
+end

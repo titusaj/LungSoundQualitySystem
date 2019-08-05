@@ -28,17 +28,10 @@ function [SNR, qualityValue] = lungSoundQualityCheck(audioBuffer, Fs)
 [SNR] = snrCalculation(auidoBuffer, Fs, bufferLenghtCheck)
 
 
-
 %Now take this SNR value and calculate the quality value of the produced
 %SNR, this can be like a score of 1-5 for right now/ simple value mapping,
 %need to explore how this works in realtime
 [qualityValue] = qualityCalculation(SNR)
-
-
-
-
-
-
 
 
 
